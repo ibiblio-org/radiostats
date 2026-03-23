@@ -1,5 +1,7 @@
 # Frontend Migration: CRA → Vite
 
+> **Status: complete** — migrated March 2026 (commit 1efa60c). This document is retained as a reference; see the commit for what was actually done, including non-obvious issues not covered here (.dockerignore, Lima read-only mount, vi.mock vs jest.mock).
+
 ## Why
 
 The frontend currently uses **Create React App (CRA) `react-scripts@5.0.1`**, which

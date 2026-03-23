@@ -56,6 +56,8 @@ python manage.py runserver
 
 ### 2 b.) Running Frontend Locally
 
+> **Note:** Frontend now uses Vite (`npm run start` starts the Vite dev server; output goes to `dist/` not `build/`).
+
 __Windows__
 ```powershell
 cd \path\to\repository-root
@@ -171,28 +173,18 @@ coverage html
 
 ## Frontend Test Suite
 
-__Windows Test__
-```powershell
-cd \path\to\frontend\
-npm run test -- --watchAll=false
-```
+The frontend uses Vitest. `npm test` runs all tests once and exits.
 
-__Windows Test Coverage__
-```powershell
-cd \path\to\frontend\
-npm test -- --coverage --watchAll=false
-```
-
-__Mac/Linux Test__
+__Windows / Mac / Linux__
 ```sh
 cd /path/to/frontend/
-npm test -- --watchAll=false
+npm test
 ```
 
-__Mac/Linux Test__
+__With coverage__
 ```sh
 cd /path/to/frontend/
-npm test -- --coverage --watchAll=false
+npm test -- --coverage
 ```
 
 Deployment
