@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Login from './Login';
 import axios from 'axios';
 
-jest.mock('axios');
+vi.mock('axios');
 
 const renderLogin = () => {
     return render(
@@ -15,7 +15,7 @@ const renderLogin = () => {
 };
 
 beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
 });
 
 /**

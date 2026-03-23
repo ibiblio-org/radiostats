@@ -4,7 +4,7 @@ import Approval from './Approvals';
 import { BrowserRouter } from 'react-router-dom';
 import axios from 'axios';
 
-jest.mock('axios');
+vi.mock('axios');
 
 /**
  * Test data matches the original Enzyme tests exactly.
@@ -73,7 +73,7 @@ const renderApproval = () => {
 };
 
 beforeEach(() => {
-    jest.clearAllMocks();
+    vi.clearAllMocks();
     localStorage.clear();
     localStorage.setItem('user', 'test-token');
     // Mock window._env_ for API calls
