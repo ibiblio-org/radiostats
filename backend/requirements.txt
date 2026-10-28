@@ -19,7 +19,7 @@ django-cors-headers==4.9.0
 django-extensions==4.1
 #django-nose==1.4.7
 dj-rest-auth
-djangorestframework==3.16.1
+djangorestframework==3.18.2
 drf-spectacular
 #drf-yasg2==1.18.5
 drf-yasg==1.21.11
